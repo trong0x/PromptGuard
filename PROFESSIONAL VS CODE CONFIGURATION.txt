@@ -1,0 +1,232 @@
+{
+  // ============================================
+  // 🔥 PROFESSIONAL VS CODE CONFIGURATION 🔥
+  // ============================================
+  // === EDITOR - Giao diện và trải nghiệm ===
+  "editor.fontFamily": "'Fira Code', 'JetBrains Mono', 'Cascadia Code', 'Consolas', monospace",
+  "editor.fontSize": 17,
+  "editor.fontWeight": "700",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 24,
+  "editor.letterSpacing": 0.5,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelZoom": true,
+  // === Hiển thị code ===
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.renderWhitespace": "boundary",
+  "editor.renderLineHighlight": "all",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.lineNumbers": "on",
+  // === Tính năng thông minh ===
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "first",
+  "editor.parameterHints.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  // === Auto save & files ===
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "default",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  // === Terminal ===
+  "terminal.integrated.fontFamily": "'JetBrains Mono', 'Cascadia Code', 'Consolas', monospace",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.defaultProfile.linux": "bash",
+  // === Python Configuration ===
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.completeFunctionParens": true,
+  // === Git Integration ===
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.suggestSmartCommit": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": true,
+  // === 🎨 MÀU SẮC CHUYÊN NGHIỆP - MẠNH MẼ ===
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#6A9955",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "storage.type",
+          "storage.modifier"
+        ],
+        "settings": {
+          "foreground": "#FF6B6B",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "string",
+          "string.quoted"
+        ],
+        "settings": {
+          "foreground": "#4ECDC4",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function",
+          "meta.function-call"
+        ],
+        "settings": {
+          "foreground": "#F57F17",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.class",
+          "entity.name.type.class"
+        ],
+        "settings": {
+          "foreground": "#4A148C",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "variable",
+          "variable.other"
+        ],
+        "settings": {
+          "foreground": "#E8E8E8",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": {
+          "foreground": "#F9D5E5",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "constant.numeric",
+          "constant.language"
+        ],
+        "settings": {
+          "foreground": "#B5CEA8",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "support.function",
+        "settings": {
+          "foreground": "#DCDCAA",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "entity.name.tag",
+        "settings": {
+          "foreground": "#569CD6",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "support.class",
+        "settings": {
+          "foreground": "#4EC9B0",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "meta.decorator",
+        "settings": {
+          "foreground": "#FFD700",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  // === Breadcrumbs ===
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "on",
+  // === Explorer ===
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  // === Search ===
+  "search.exclude": {
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.venv": true,
+    "**/venv": true,
+    "**/*.pyc": true
+  },
+  // === Extensions Recommendations ===
+  "extensions.ignoreRecommendations": false,
+  // === Zen Mode ===
+  "zenMode.centerLayout": true,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  // === Security ===
+  "security.workspace.trust.enabled": true,
+  // === Performance ===
+  "files.exclude": {
+    "**/.git": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.DS_Store": true
+  },
+  "workbench.colorTheme": "Black",
+  "editor.dropIntoEditor.preferences": [],
+  "editor.language.colorizedBracketPairs": [],
+  "typescript.tsserver.watchOptions": "vscode",
+  "editor.parameterHints.enabled": false,
+  "editor.indentSize": "tabSize",
+  "debug.console.acceptSuggestionOnEnter": "on",
+  "editor.inlineSuggest.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+}
